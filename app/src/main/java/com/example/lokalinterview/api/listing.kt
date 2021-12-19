@@ -5,8 +5,7 @@ import retrofit2.Response
 import retrofit2.http.GET
 
 interface listing {
-    @GET("albums/1/photo")
-    suspend fun Searchnews(
-
-    ): Response<MutableList<article>>
+//    1st step
+    @GET("photos")
+    suspend fun Searchnews(): Response<MutableList<article>>
 }

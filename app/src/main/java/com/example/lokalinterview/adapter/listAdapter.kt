@@ -34,7 +34,7 @@ class listAdapter: RecyclerView.Adapter<listAdapter.listViewHolder>(){
     override fun onBindViewHolder(holder: listViewHolder, position: Int) {
         val list=differ.currentList[position]
         holder.itemView.apply {
-            Glide.with(this).load(list.url).into(imageView)
+            Glide.with(this.context).load("https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg").into(imageView)
             Title.text=list.title
             setOnClickListener {
                 onItemClickListener?.let{
